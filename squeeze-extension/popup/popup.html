@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/popup/popup.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+    <body class="roboto-mono-regular">
+        <main class="popup">
+            <div class="header-wrapper">
+                <div class="dot-wrapper">
+                    <div class="dot one"></div>
+                    <div class="dot two"></div>
+                    <div class="dot three"></div>
+                </div>
+                <h1>Squeeze</h1>
+            </div>
+
+            <div class="content">
+                <p>Please enter codes separated by commas</p>
+                <p>(ex: 1234,4567,7890)</p>
+                <textarea type="text" id="codes"></textarea>
+                <button id="convert">convert</button>
+                <h3>Pershing IPs:</h3>
+                
+                <p id="result"></p>
+            </div>
+        </main>
+
+
+        <script src="popup.js"></script>
+    </body>
+</html>
