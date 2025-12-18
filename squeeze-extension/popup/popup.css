@@ -66,6 +66,10 @@ p {
     padding-bottom: 6px;
 }
 
+#result {
+    overflow-wrap: break-word;
+}
+
 textarea {
     min-width: 100%;
     max-width: 100%;
@@ -77,6 +81,7 @@ textarea {
 
 .popup {
     width: 350px;
+    max-width: 350px;
     border-width: 2px;
     border-color: black;
     border-radius: 10px;
