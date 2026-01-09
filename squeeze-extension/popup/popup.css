@@ -118,3 +118,7 @@ textarea {
     background-color: rgb(252, 234, 200);
     cursor: pointer;
   }
+
+  .note {
+    font-size: smaller;
+  }

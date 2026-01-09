@@ -6,7 +6,7 @@ function ValidCode(str) {
     return /[^0-9, \s]/.test(str)
 }
 
-function ConvertCodes() {
+async function ConvertCodes() {
     if (codesToConvert.value === '') return
     if (ValidCode(codesToConvert.value)) {
         result.textContent = "Invalid character entered! Please provide valid codes"
@@ -580,6 +580,8 @@ function ConvertCodes() {
     }
 
     result.textContent = convertedIps
+
+    await navigator.clipboard.writeText(convertedIps)
 }
 
 covertBtn.addEventListener('click', ConvertCodes)
