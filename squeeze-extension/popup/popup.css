@@ -106,12 +106,10 @@ textarea {
     display: block;
     padding: 3px 7px;
     border-width: 1px;
-    margin-left: auto;
     background-color: rgb(255, 187, 60);
     border-radius: 3px;
     box-shadow: 1px 1px 0 black;
     font-weight: 500;
-
   }
 
   button:hover {
@@ -121,4 +119,10 @@ textarea {
 
   .note {
     font-size: smaller;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7px;
   }

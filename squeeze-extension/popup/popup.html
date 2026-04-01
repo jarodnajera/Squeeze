@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/popup/popup.css">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -19,20 +18,19 @@
                 </div>
                 <h1>Squeeze</h1>
             </div>
-
             <div class="content">
                 <p>Please enter codes separated by commas</p>
-                <p>(ex: 1234,4567,7890)</p>
-                <p class="note"><i>Note: Codes will automatically copy to clipboard when "convert" is clicked</i></p>
+                <p>(ex: 1234,4567,7890 or N34,A01)</p>
+                <p class="note"><i>Note: Results will automatically copy to clipboard when a button is clicked</i></p>
                 <textarea type="text" id="codes"></textarea>
-                <button id="convert">convert</button>
-                <h3>Pershing IPs:</h3>
-                
+                <div class="button-wrapper">
+                    <button id="convert">Rep Codes → IPs</button>
+                    <button id="reverse">IPs → Rep Codes</button>
+                </div>
+                <h3>Result:</h3>
                 <p id="result"></p>
             </div>
         </main>
-
-
         <script src="popup.js"></script>
     </body>
 </html>
